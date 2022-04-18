@@ -38,7 +38,7 @@ const ToggleActiveBar = styled.div`
   background-color: #fff;
   border-radius: 50px;
   z-index: 2;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease;
   transform: ${props => (props.isClicked ? 'translateX(100%)' : '')};
 `;
 
