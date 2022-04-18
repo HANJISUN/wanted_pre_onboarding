@@ -39,7 +39,7 @@ const ToggleActiveBar = styled.div`
   border-radius: 50px;
   z-index: 2;
   transition: all 0.1s ease-in-out;
-  transform: translateX(${props => (props.isClicked ? '100' : '')}%);
+  transform: ${props => (props.isClicked ? 'translateX(100%)' : '')};
 `;
 
 const ToggleButton = styled.div`
@@ -49,9 +49,8 @@ const ToggleButton = styled.div`
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: bold;
-  color: var(
-    ${props => (props.isClicked ? '--textSecondary' : '--textPrimary')}
-  );
+  color: ${props =>
+    props.isClicked ? 'var(--textSecondary)' : 'var(--textPrimary)'};
 
   cursor: pointer;
   width: 150px;
