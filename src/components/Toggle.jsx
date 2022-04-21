@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const Toggle = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -39,7 +39,7 @@ const ToggleActiveBar = styled.div`
   border-radius: 50px;
   z-index: 2;
   transition: all 0.2s ease;
-  transform: ${props => (props.isClicked ? 'translateX(100%)' : '')};
+  transform: ${props => (props.isClicked ? "translateX(100%)" : "")};
 `;
 
 const ToggleButton = styled.div`
@@ -50,7 +50,7 @@ const ToggleButton = styled.div`
   font-size: 1rem;
   font-weight: bold;
   color: ${props =>
-    props.isClicked ? 'var(--textSecondary)' : 'var(--textPrimary)'};
+    props.isClicked ? "var(--textSecondary)" : "var(--textPrimary)"};
 
   cursor: pointer;
   width: 150px;

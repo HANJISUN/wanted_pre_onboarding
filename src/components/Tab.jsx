@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const Tab = () => {
-  const tabMenu = ['감자', '고구마', '카레라이스'];
+  const tabMenu = ["감자", "고구마", "카레라이스"];
   const [isTabClicked, setIsTabClicked] = useState(0);
 
   return (
@@ -46,7 +46,7 @@ const TabButton = styled.div`
   font-size: 0.9rem;
   font-weight: 600;
   color: ${props =>
-    props.isClicked ? 'var(--textPrimary)' : 'var(--textSecondary)'};
+    props.isClicked ? "var(--textPrimary)" : "var(--textSecondary)"};
 
   cursor: pointer;
 `;
