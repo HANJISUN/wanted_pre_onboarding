@@ -5,22 +5,45 @@ const Toggle = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div>
-      <h2>Toggle</h2>
+    <ToggleDiv>
+      <ToggleTitle>Toggle</ToggleTitle>
       <ToggleContainer>
-        <ToggleActiveBar isClicked={isClicked} />
-        <ToggleButton isClicked={isClicked} onClick={() => setIsClicked(false)}>
-          기본
-        </ToggleButton>
-        <ToggleButton isClicked={!isClicked} onClick={() => setIsClicked(true)}>
-          상세
-        </ToggleButton>
+        <ToggleBox>
+          <ToggleActiveBar isClicked={isClicked} />
+          <ToggleButton
+            isClicked={isClicked}
+            onClick={() => setIsClicked(false)}
+          >
+            기본
+          </ToggleButton>
+          <ToggleButton
+            isClicked={!isClicked}
+            onClick={() => setIsClicked(true)}
+          >
+            상세
+          </ToggleButton>
+        </ToggleBox>
       </ToggleContainer>
-    </div>
+    </ToggleDiv>
   );
 };
 
+const ToggleDiv = styled.div`
+  margin: 10px 0;
+`;
+
+const ToggleTitle = styled.h2`
+  margin: 10px 0;
+`;
+
 const ToggleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  height: 100px;
+`;
+
+const ToggleBox = styled.div`
   display: flex;
   margin: 10px;
   width: 300px;

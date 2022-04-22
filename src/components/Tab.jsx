@@ -6,8 +6,8 @@ const Tab = () => {
   const [isTabClicked, setIsTabClicked] = useState(0);
 
   return (
-    <div>
-      <h2>Tab</h2>
+    <TabDiv>
+      <TabTitle>Tab</TabTitle>
       <TabContainer>
         {tabMenu.map((element, index) => {
           return (
@@ -26,14 +26,22 @@ const Tab = () => {
       <TabActiveBar>
         <ActiveLine activeLine={isTabClicked} isClicked={isTabClicked} />
       </TabActiveBar>
-    </div>
+    </TabDiv>
   );
 };
+
+const TabDiv = styled.div`
+  margin: 10px 0;
+`;
+
+const TabTitle = styled.h2`
+  margin: 10px 0;
+`;
 
 const TabContainer = styled.div`
   display: flex;
   width: 450px;
-  height: 40px;
+  height: 100px;
 `;
 
 const TabButton = styled.div`
