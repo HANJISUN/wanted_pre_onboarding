@@ -41,7 +41,7 @@ const TabTitle = styled.h2`
 const TabContainer = styled.div`
   display: flex;
   width: 450px;
-  height: 100px;
+  height: 40px;
 `;
 
 const TabButton = styled.div`
