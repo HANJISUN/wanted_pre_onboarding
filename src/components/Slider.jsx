@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-export default function Slider() {
+const Slider = () => {
   const sliderPointList = [1, 25, 50, 75, 100];
 
   const [sliderState, setSliderState] = useState(1);
@@ -49,7 +49,9 @@ export default function Slider() {
       </SliderContainer>
     </SliderDiv>
   );
-}
+};
+
+export default Slider;
 
 const SliderDiv = styled.div`
   margin: 10px 0;
