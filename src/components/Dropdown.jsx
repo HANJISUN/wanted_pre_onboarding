@@ -27,26 +27,25 @@ const Dropdown = () => {
     setIsDroped(false);
   };
 
-  useEffect(() => {
-    // 현재 document에서 mousedown 이벤트가 동작하면 호출되는 함수입니다.
-    function handleClickOutside(e) {
-      if (outsideRef.current && !outsideRef.current.contains(e.target)) {
-        setIsDroped(!isDroped);
-        return;
-      }
+  function handleClickOutside(e) {
+    if (outsideRef.current && !outsideRef.current.contains(e.target)) {
+      setIsDroped(false);
+      return;
     }
+  }
+
+  useEffect(() => {
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
-      setIsDroped(!isDroped);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [outsideRef]);
+  }, []);
 
   return (
-    <DropdownDiv>
+    <DropdownDiv ref={outsideRef}>
       <h2>Dropdown</h2>
-      <DropdownContainer ref={outsideRef}>
+      <DropdownContainer>
         <SeleteBox onClick={() => setIsDroped(!isDroped)}>
           <p className="selectedValue">{selectedValue}</p>
           <div>
@@ -99,16 +98,17 @@ export default Dropdown;
 
 const DropdownDiv = styled.div`
   position: relative;
-  width: 400px;
   margin: 10px 0;
 
   h2 {
+    position: relative;
+    left: -50px;
     margin-bottom: 20px;
   }
 `;
 
 const DropdownContainer = styled.div`
-  width: 250px;
+  width: 230px;
   height: 350px;
   padding: 5px;
 `;
