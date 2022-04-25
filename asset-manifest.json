@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/HANJISUN/wanted_pre_onboarding/static/css/main.f98caa9f.css",
-    "main.js": "/HANJISUN/wanted_pre_onboarding/static/js/main.b4cfad6a.js",
-    "index.html": "/HANJISUN/wanted_pre_onboarding/index.html",
-    "main.f98caa9f.css.map": "/HANJISUN/wanted_pre_onboarding/static/css/main.f98caa9f.css.map",
-    "main.b4cfad6a.js.map": "/HANJISUN/wanted_pre_onboarding/static/js/main.b4cfad6a.js.map"
+    "main.css": "/wanted_pre_onboarding/static/css/main.f98caa9f.css",
+    "main.js": "/wanted_pre_onboarding/static/js/main.d410ed8d.js",
+    "index.html": "/wanted_pre_onboarding/index.html",
+    "main.f98caa9f.css.map": "/wanted_pre_onboarding/static/css/main.f98caa9f.css.map",
+    "main.d410ed8d.js.map": "/wanted_pre_onboarding/static/js/main.d410ed8d.js.map"
   },
   "entrypoints": [
     "static/css/main.f98caa9f.css",
-    "static/js/main.b4cfad6a.js"
+    "static/js/main.d410ed8d.js"
   ]
 }
