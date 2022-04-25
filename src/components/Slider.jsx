@@ -25,7 +25,7 @@ export default function Slider() {
             onChange={handleChangeState}
           />
           <SliderPointContainer>
-            {sliderPointList.map((element, index) => {
+            {sliderPointList.map(element => {
               return (
                 <SliderPointDot
                   key={element}
