@@ -15,11 +15,16 @@ https://hanjisun.github.io/wanted_pre_onboarding/
 
 <br />
 
+
 # 🧐 구현 방법 및 이유
 
 ## 1️⃣ Toggle
 
-<br />
+<br />  
+
+![Toggle](https://user-images.githubusercontent.com/88502596/165400278-4b5e33d1-b682-4dce-91fb-c0074d2aba4a.gif)
+
+<br />  
 
 💡 **구현 방법**
 
@@ -38,7 +43,10 @@ const [isClicked, setIsClicked] = useState(false);
 라이브러리를 사용하지 않고 구현해본 적이 없어서 어떻게 시작해야할지 감도 잡히지 않았습니다. 그래서 먼저 다른 개발자들이 생성한 토글 버튼의 형태를 살펴봤습니다. 대부분의 경우 input 태그에 ::before, ::after, content를 통해 토글버튼을 구성한 것을 확인할 수 있었습니다. 형태를 먼저 이해한 후 props로 state의 상태에 따라 값을 변경되도록 구현할 수 있었습니다.  
 <br />
 
-## 2️⃣ Tab
+## 2️⃣ Tab  
+<br />  
+
+![Tab](https://user-images.githubusercontent.com/88502596/165400692-e44c9af4-e8cf-45ab-9401-3deda50aeff8.gif)
 
 <br />
 
@@ -60,6 +68,10 @@ const [isTabClicked, setIsTabClicked] = useState(0);
 <br />
 
 ## 3️⃣ Slider
+
+<br />
+
+![Slider](https://user-images.githubusercontent.com/88502596/165401049-34a1ae44-ae08-4839-9466-2538d6016377.gif)
 
 <br />
 
@@ -114,6 +126,10 @@ SliderPointDot의 색상도 slider의 상태에 맞게 변경될 수있도록 �
 
 <br />
 
+![Input](https://user-images.githubusercontent.com/88502596/165400843-123f29ee-bdf6-45b8-8ac7-1cc9f37184be.gif)
+
+<br />
+
 💡 **구현 방법**  
 email은 onChange로 값이 변경될 때 마다 state에 저장하도록 구현했고, input 오른쪽의 체크 아이콘은 state이 변경될 때마다 이메일 유효성을 검사하여 true인 경우 아이콘 색이 활성화 되도록 구현하였습니다. 그리고, input 하단의 errorMessage는 input의 포커스가 사라졌을 때, 이메일 유효성 검사를 진행할 수 있도록 onBlur를 사용하여 구현하였습니다.
 password는 input의 type을 password로 두고, 눈모양 아이콘을 클릭하여 비밀번호 보기를 선택하면, type을 text로 바꿔주어 비밀번호를 확인할 수 있게 삼항연산자로 구현하였습니다.
@@ -127,6 +143,10 @@ password는 input의 type을 password로 두고, 눈모양 아이콘을 클릭�
 <br />
 
 ## 5️⃣ Dropdown
+
+<br />
+
+![Dropdown](https://user-images.githubusercontent.com/88502596/165401176-106c74f9-de6f-4c2f-a01a-edf22a9d3316.gif)
 
 <br />
 
