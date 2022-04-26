@@ -24,7 +24,7 @@ const Tab = () => {
         })}
       </TabContainer>
       <TabActiveBar>
-        <ActiveLine activeLine={isTabClicked} isClicked={isTabClicked} />
+        <ActiveLine activeLine={isTabClicked} />
       </TabActiveBar>
     </TabDiv>
   );
