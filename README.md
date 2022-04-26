@@ -7,11 +7,11 @@ https://hanjisun.github.io/wanted_pre_onboarding/
 
 ## 📝 원티드 프리온보딩 과제 목표
 
-✅ 조금 느리더라도 모든 컴포넌트 구현하기  
-✅ 일관성 있는 코드 작성하기
-✅ 친절한 커밋 메시지 작성하기  
-✅ EsLint, Prettier 사용해 코팅 컨벤션 적용해보기
-✅ 과제를 통해 새로운 기술 하나 익히기 → Styled Components
+✅ 조금 느리더라도 모든 컴포넌트 구현하기    
+✅ 일관성 있는 코드 작성하기    
+✅ 친절한 커밋 메시지 작성하기   
+✅ EsLint, Prettier 사용해 코팅 컨벤션 적용해보기  
+✅ 과제를 통해 새로운 기술 하나 익히기 → Styled Components  
 
 <br />
 
